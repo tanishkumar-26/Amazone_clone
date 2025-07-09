@@ -13,18 +13,32 @@
     justify-content: space-evenly;
 }
 
-.nav-logo {
-    height: 50px;
-    width: 100px;
-    
-}
-
 .logo {
     background-image: url("amazone-logo.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 50px;
     width: 100px;
+    transition: transform 0.3s ease;
 }
+
+.amazon-img {
+    height: 50px;
+    width: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.amazon-img:hover {
+    transform: scale(1.05);
+}
+
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
 
 .border {
     border: 1.5px solid transparent;
