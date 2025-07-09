@@ -7,10 +7,13 @@
 .navbar {
     height: 60px;
     background-color: #0F1111;
-    color: white ;
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between; /* changed */
+    padding: 0 20px; /* added padding */
+    flex-wrap: wrap; /* responsive */
+    gap: 10px;
 }
 
 .logo {
